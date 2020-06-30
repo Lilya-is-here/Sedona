@@ -4,141 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedona</title>
-    
+        
 </head>
 <body>
-<header>
-    <nav>
+    <header class="site-header">
+        <nav class="site-header navigation">
+    
+            <ul class="navigation__list"> 
+                <li class="navigation__item"><a class="navigation__link" href="blank.html">Информация</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="blank.html">Фото и видео</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="blank.html">Карта штата</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="hotels.html">Гостиницы</a></li>            
+            </ul>
+    
+       </nav>
+            <a class="site-header__logo" href="blank.html"><img class="site-header__logo__img" src="img/logo-sedona.svg" width="138" height="70" alt="Логотип: «City of Sedona»"></a> 
+     
+    
+    </header>
 
-        <ul>
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Фото и видео</a></li>
-            <li><a href="blank.html"><img src="#" width="138" height="70" alt="City of Sedona: Главная"></a></li> Можно ли логотип включить в nav?
-            <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<main>
+<main class="site-main">
 
     <!--  Промо-блок -->
-    <section>
-        <h1>Sedona</h1> <!-- скрытый заголовок -->
+    <section class="promo-block">
+        <h1 promo-block__title>Sedona</h1> <!-- скрытый заголовок -->
 
-       <p> Седона — небольшой городок в Аризоне, <br>
+       <p class="promo-block__top"> Седона — небольшой городок в Аризоне, <br>
         заслуживающий большего!</p>
+
+        <p class="promo-block__bottom">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
 
         
     </section>
  <!-- Характеристики  -->
-    <section>
-        <h2>Причины</h2> <!-- скрытый заголовок -->
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <section class="reasons">
+        <h2 class="reasons__title">Причины</h2> <!-- скрытый заголовок -->
+       
+        <div class="reasons first-reason" >
+            <h3 class="first-reason__title">Настоящий <br> 
+            городок</h3>
 
-        <h3>Настоящий <br> <!-- в заголовке можно использовать br? -->
-             городок</h3>
-        <span>— №1 —</span>
-            <p> Седона - не аттракцион для туристов, там <br>
-                течёт своя жизнь
-            </p> 
+       <span class="first-reason__number">— №1 —</span>
 
+           <p class="first-reason__description"> Седона - не аттракцион для туристов, там <br>
+               течёт своя жизнь
+           </p> 
 
-        <ul>
-            <li> <h3>Жилье</h3>
-            <p> Рекомендуем пожить в настоящем <br>
-                мотеле, всё как в кино!
+</div>
+        <div class="reasons features">
+            <ul class="reasons features__list">
+                <li class="features__item"> <h3 class="features__title">Жилье</h3>
+                <p class="features__description"> Рекомендуем пожить в настоящем <br>
+                    мотеле, всё как в кино!</p>
+                 </li>
+                <li class="features__item"> <h3 class="features-title" >Еда</h3>
+                <p class="features__description">
+                    Всегда заказывайте фирменный бургер, <br>
+                    вы не разочаруетесь!
+    
+                </p> </li>
+                <li class="features__item"> <h3 class="features__title">Сувениры</h3>
+                <p class="features__description">
+                    Не только китайского, но и местного <br>
+                    производства!
+    
+                </p> </li>
+            </ul>
+    
+        </div>
+        <div class="reasons second-reason">
+            <h3 class="second-reason__title">Там есть <br>
+            Мост Дьявола</h3>
+            <span class="second-reason__number">— №2 —</span>
+                <p class="second-reason__description"> Да, по нему можно пройти! Если конечно <br>
+                    вы осмелитесь
+                </p> 
+            </div>
 
-            </p> </li>
-            <li> <h3>Еда</h3>
-            <p>
-                Всегда заказывайте фирменный бургер, <br>
-                вы не разочаруетесь!
-
-            </p> </li>
-            <li> <h3>Сувениры</h3>
-            <p>
-                Не только китайского, но и местного <br>
-                производства!
-
-            </p> </li>
-        </ul>
-
-        <h3>Там есть <br>
-        Мост Дьявола</h3>
-        <span>— №2 —</span>
-            <p> Да, по нему можно пройти! Если конечно <br>
-                вы осмелитесь
-            </p> 
-
-        <ul>
-            <li> <h3>Небольшая площадь</h3>
-                <span>— №3 —</span>
-            <p> Все достопримечательности <br>
+       <div class="reasons other-reasons">
+        <ul class="other-reasons__list">
+            <li class="other-reasons__item"> <h3 class="other-reasons__title">Небольшая площадь</h3>
+                <span class="other-reasons__number">— №3 —</span>
+            <p class="other-reasons__description"> Все достопримечательности <br>
                 находятся очень близко
 
             </p> </li>
-            <li> <h3>Красивая дорога</h3>
-                <span>— №4 —</span>
-            <p>
+            <li class="other-reasons__item"> <h3 class="other-reasons__title">Красивая дорога</h3>
+                <span class="other-reasons__number">— №4 —</span>
+            <p class="other-reasons__description">
                 Ехать в Седону из Лас-Вегаса совсем <br>
-                не скучно!
-
-            </p> </li>
-            <li> <h3>Мало туристов</h3>
-                <span>— №5 —</span>
-            <p>
+                не скучно!</p>
+             </li>
+            <li class="other-reasons__item"> <h3 class="other-reasons__title">Мало туристов</h3>
+                <span class="other-reasons__number">— №5 —</span>
+            <p class="other-reasons__description">
                 Большинство едет в Гранд Каньон <br>
-                и толпится там
-
-            </p> </li>
+                и толпится там</p> 
+            </li>
         </ul>
-
-
-
-
-
-
-
+       </div>
 
     </section>
 
-    <section>
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, <br>
+    <section class="search">
+        <h2>Поиск гостиницы</h2> <!-- скрытый заголовок -->
+        <h3 class="search__title">Заинтересовались?</h3> 
+        <p class="search__description">Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
 
-            <!-- форма поиска гостиницы в Седоне -->
+            <section class="modal modal-search">
+                <h2 class="modal-search__title">Поиск гостиницы в Седоне</h2>
+                <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="post">
+                    <p class="modal-search__arrival">
+                      <label for="arrival-appointment-date">Дата заезда</label>
+                      <input id="arrival-appointment-date" type="text" name="date" placeholder="01.01.2020">
+                    </p>
+    
+                    <p class="modal-search__departure">
+                        <label for="departure-appointment-date">Дата выезда</label>
+                        <input id="departure-appointment-date" type="text" name="date" placeholder="01.01.2020">
+                      </p>
 
-           <!--  Карта -->
+                      <p class="modal-search__adults">
+                          <label for="adults-number">Взрослые:</label>
+                        <button type="button" onclick="this.nextElementSibling.stepDown()" aria-label="Уменьшить">-</button>
+                        <input type="number" min="0" max="100" value="1" class="raz" id="adults-number">
+                        <button type="button" onclick="this.previousElementSibling.stepUp()"  aria-label="Увеличить">+</button>
+                      </p>
+
+                      <p class="modal-search__children">
+                        <label for="children-number">Дети:</label>
+                      <button type="button" onclick="this.nextElementSibling.stepDown()"  aria-label="Уменьшить">-</button>
+                      <input type="number" min="0" max="100" value="1" class="raz" id="children-number">
+                      <button type="button" onclick="this.previousElementSibling.stepUp()"  aria-label="Увеличить">+</button>
+                    </p>
+
+                      <button class="modal-search__submit" type="submit">Найти</button>
+                  </form>
+            </section>
+
+           <img class="search__map" src="img/map.png" width="1199" height="594" alt="Карта"> 
 
 
     </section>
   
 </main>
 
-<footer>
+ <footer class="site-footer">
 
-    <span>#VisitSedona</span>
-    <a href="tel:+7(495) 666-01-66">
+    <div class="site-footer__contacts contacts">
+        <a href="#" class="contacts__item contacts__web">#VisitSedona</a>
+    <a href="tel:+7(495) 666-01-66" class="contacts__item contacts__phone">
         Тел: +7(495) 666-01-66
     </a>
+    </div>
+    
+        <div class="site-footer__socials socials">
+          <a href="#" class="socials__link socials__link--tw">Twitter</a>
+          <a href="#" class="socials__link socials__link--fb">Facebook</a>
+          <a href="#" class="socials__link socials__link--yt">Youtube</a>
+        </div>
 
-    <ul>
-        <li>
-          <a href="#">Твиттер</a>
-        </li>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Ютуб</a>
-        </li>
-      </ul>
-
-      <p>
-        Website by  <a href="https://htmlacademy.ru"> <img src="#" width="115" height="41" alt="HTML Academy">
+      <p class="site-footer__creator creator">
+        Website by  <a class="creator__link" href="https://htmlacademy.ru"> <img class="creator__image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
        </a>
       </p>
   

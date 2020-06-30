@@ -1,0 +1,10 @@
+
+.raz {
+  all: unset;
+  -moz-appearance: textfield;
+  width: 3em;
+  text-align: center;
+}
+.raz::-webkit-inner-spin-button { 
+  display: none;
+} /* для кнопок +- */
