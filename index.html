@@ -11,8 +11,8 @@
 <body class="page-body">
 
     <header class="site-header">
-        <div class="container"> 
-           <nav class="site-header navigation">
+        <div class="site-header__container"> 
+           <nav class="site-header__navigation navigation">
     
         <ul class="navigation__list-left"> 
             <li class="navigation__item-info"><a class="navigation__link" href="blank.html">Информация</a></li>
@@ -24,27 +24,21 @@
             <li class="navigation__item-map"><a class="navigation__link" href="blank.html">Карта штата</a></li>
             <li class="navigation__item-hotels"><a class="navigation__link" href="hotels.html">Гостиницы</a></li>            
         </ul>
-       
- 
-
-   </nav>
+       </nav>
 </div>
-           
-    
-    </header>
-   <div class="container">
-   <div class="page-wrapper">
-   
+</header>
+
+  
 
 <main class="site-main">
-
+    <div class="site-main__container">
+        <div class="site-main__page-wrapper">
+        
     <!--  Промо-блок -->
     <section class="promo-block">
-        <h1 class=" promo-block__title visually-hidden">Sedona</h1> <!-- скрытый заголовок -->
+        <h1 class=" promo-block__title promo-block__title--visually-hidden">Sedona</h1> <!-- скрытый заголовок -->
       <div class="promo-block promo-image">
-      <p class="promo-image__text ">  <span class="visually-hidden">Welcome to the gourgeous <br> Sedona <br> "Because the Grand Canyon sucks"</span>
-      </p>
-
+       <img class="promo-image__text" src="/img/intro-welcome.svg" alt="Welcome to the gourgeous Sedona, Because the Grand Canyon sucks"  width="456.65" height="350.88"> 
       </div>
       <div class="promo-block promo-description">
         <p class="promo-description__top"> Седона — небольшой городок в Аризоне, <br>
@@ -58,7 +52,7 @@
     </section>
  <!-- Характеристики  -->
     <section class="reasons">
-        <h2 class="reasons__title visually-hidden">Причины</h2> <!-- скрытый заголовок -->
+        <h2 class="reasons__title reasons__title--visually-hidden">Причины</h2> <!-- скрытый заголовок -->
        
         <div class="reasons first-reason" >
          <div class="first-reason__text-wrapper">
@@ -72,7 +66,7 @@
                </p> 
          </div>
 
-        <div class="first-reason__image-wrapper"> <span class="first-reason__name visually-hidden">"Город Седона" </span>
+        <div class="first-reason__image-wrapper"> 
         </div>
 </div>
         <div class="reasons features">
@@ -97,7 +91,7 @@
     
         </div>
         <div class="reasons second-reason">
-            <div class="second-reason__image-wrapper">  <span class="second-reason__name visually-hidden">"Мост Дьявола" </span> 
+            <div class="second-reason__image-wrapper">  
             </div>
            <div class="second-reason__text-wrapper">
             <h3 class="second-reason__title">Там есть <br>
@@ -137,7 +131,7 @@
     </section>
 
     <section class="search">
-        <h2 class="visually-hidden">Поиск гостиницы</h2> <!-- скрытый заголовок -->
+        <h2 class="search__title search__title--visually-hidden">Поиск гостиницы</h2> <!-- скрытый заголовок -->
         <h3 class="search__title">Заинтересовались?</h3> 
         <p class="search__description">Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
@@ -176,36 +170,41 @@
            
     </section>
     <section class="map">
-        <h2 class="map__title visually-hidden">Карта</h2>
+        <h2 class="map__title map__title--visually-hidden">Карта</h2>
         <img class="map__image" src="img/map.png" width="1199" height="594" alt="Карта"> 
     </section>
-
+</div>
+</div>
 </main>
 
  <footer class="site-footer">
 
-    <div class="site-footer__contacts contacts">
-        <a href="#" class="contacts__item contacts__web">#VisitSedona</a>
-    <a href="tel:+7(495) 666-01-66" class="contacts__item contacts__phone">
-        Тел: +7(495) 666-01-66
-    </a>
-    </div>
     
-        <div class="site-footer__socials socials">
-          <a href="#" class="socials__link socials__link--tw">Twitter</a>
-          <a href="#" class="socials__link socials__link--fb">Facebook</a>
-          <a href="#" class="socials__link socials__link--yt">Youtube</a>
-        </div>
-
-      <div class="site-footer__creator creator">
-        Website by  <a class="creator__link" href="https://htmlacademy.ru"> <img class="creator__image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
-       </a>
-      </div>
-  
-
+     <div class="site-footer__container">  
+         <div class="site-footer__page-wrapper">
+            <div class="site-footer__contacts contacts">
+                <a href="#" class="contacts__item contacts__web">#VisitSedona</a>
+            <a href="tel:+7(495) 666-01-66" class="contacts__item contacts__phone">
+                Тел: +7(495) 666-01-66
+            </a>
+            </div>
+            
+                <div class="site-footer__socials socials">
+                  <a href="#" class="socials__link socials__link--tw">Twitter</a>
+                  <a href="#" class="socials__link socials__link--fb">Facebook</a>
+                  <a href="#" class="socials__link socials__link--yt">Youtube</a>
+                </div>
+        
+              <div class="site-footer__creator creator">
+                Website by  <a class="creator__link" href="https://htmlacademy.ru"> <img class="creator__image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+               </a>
+              </div>
+          
+         </div>
+</div>
+       
 </footer>
-</div>
-</div>
+
 </body>
   
 </html>
